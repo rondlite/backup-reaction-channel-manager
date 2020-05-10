@@ -1,6 +1,6 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reaction Channel manager plugin for DemandCluster",
   "type": "module",
   "engines": {
@@ -22,13 +22,9 @@
     "README.md"
   ],
   "babel": {
-    "plugins": [
-      "@babel/transform-runtime",
-      "@babel/plugin-proposal-class-properties"
-    ],
     "presets": [
       [
-        "@babel/env",
+        "@babel/preset-env",
         {
           "targets": {
             "node": "12"
@@ -41,11 +37,10 @@
   },
   "main": "./dist/index.js",
   "scripts": {
-    "build": "rm -rf dist/** && babel src --out-dir dist --ignore *.test.js,__snapshots__",
+    "build": "babel src -d dist",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@babel/runtime": "^7.9.6",
     "@reactioncommerce/api-utils": "~1.12.0",
     "apollo-link": "^1.2.14",
     "apollo-link-context": "^1.0.20",
@@ -59,9 +54,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "babel-eslint": "^10.1.0",
-    "babel-plugin-rewire-exports": "^2.1.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+    "@babel/runtime": "^7.9.6"
   },
   "publishConfig": {
     "access": "public"

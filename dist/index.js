@@ -1,4 +1,4 @@
-"use strict";var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");Object.defineProperty(exports, "__esModule", { value: true });exports.default = register;
+"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.default = register;
 var _graphqlTools = _interopRequireDefault(require("graphql-tools"));
 
 var _getAnonymousAccessToken = _interopRequireDefault(require("@reactioncommerce/api-utils/getAnonymousAccessToken.js"));
@@ -18,7 +18,7 @@ var _apolloLink = _interopRequireDefault(require("apollo-link"));
 
 var _nodeFetch = _interopRequireDefault(require("node-fetch"));
 var _index = _interopRequireDefault(require("./i18n/index.js"));
-var _index2 = _interopRequireDefault(require("./schemas/index.js"));const tokenInfo = (0, _getAnonymousAccessToken.default)();const { makeExecutableSchema, makeRemoteExecutableSchema } = _graphqlTools.default;const { setContext } = _apolloLinkContext.default;const { createHttpLink } = _apolloLinkHttp.default;
+var _index2 = _interopRequireDefault(require("./schemas/index.js"));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}const tokenInfo = (0, _getAnonymousAccessToken.default)();const { makeExecutableSchema, makeRemoteExecutableSchema } = _graphqlTools.default;const { setContext } = _apolloLinkContext.default;const { createHttpLink } = _apolloLinkHttp.default;
 
 const channelsUrl = "http://demandjs-graphql:4001";
 
@@ -49,7 +49,7 @@ async function register(app) {
   await app.registerPlugin({
     label: "demandcluster channels",
     name: "reaction-demandcluster",
-    version: "1.0.2",
+    version: "1.0.3",
     i18n: _index.default,
     graphQL: {
       schemas: [remoteSchema] }
