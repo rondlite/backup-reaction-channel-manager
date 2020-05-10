@@ -1,6 +1,6 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Reaction Channel manager plugin for DemandCluster",
   "type": "module",
   "engines": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/rondlite/reaction-channel-manager#readme",
   "files": [
-    "dist",
+    "src",
     "LICENSE",
     "README.md"
   ],
@@ -36,6 +36,7 @@
     "retainLines": true
   },
   "main": "./src/index.js",
+
   "env": {
     "es6": true
   },

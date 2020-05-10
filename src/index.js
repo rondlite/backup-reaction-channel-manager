@@ -48,8 +48,8 @@ const remoteSchema = makeRemoteExecutableSchema({ schema: exSchema, link });
 export default async function register(app) {
   await app.registerPlugin({
     label: "demandcluster channels",
-    name: "reaction-demandcluster",
-    version: "1.0.4",
+    name: "demandcluster",
+    version: "1.1.1",
     i18n,
     graphQL: {
       schemas: [remoteSchema]
