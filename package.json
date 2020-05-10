@@ -1,6 +1,6 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Reaction Channel manager plugin for DemandCluster",
   "type": "module",
   "engines": {
@@ -35,11 +35,7 @@
     "sourceMaps": true,
     "retainLines": true
   },
-  "main": "./dist/index.js",
-  "scripts": {
-    "build": "babel src -d dist",
-    "prepublishOnly": "npm run build"
-  },
+  "main": "./src/index.js",
   "env": {
     "es6": true
   },
