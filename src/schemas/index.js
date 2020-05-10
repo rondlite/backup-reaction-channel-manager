@@ -1,4 +1,4 @@
-import importAsString from "@reactioncommerce/api-utils/importAsString";
+import importAsString from "@reactioncommerce/api-utils/importAsString.js";
 
 const schema = importAsString("./schemas.graphql");
 
