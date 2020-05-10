@@ -2,7 +2,7 @@ import graphqlTools from "graphql-tools";
 import pkg from "../package.json";
 import getAnonymousAccessToken from "@reactioncommerce/api-utils/getAnonymousAccessToken.js";
 import httpLink from "apollo-link-http";
-import {setContext} from "apollo-link-context";
+import setContex from "apollo-link-context";
 import ApolloLink from "apollo-link";
 import fetch from "node-fetch";
 import i18n from "./i18n/index.js";
@@ -11,6 +11,7 @@ import schemaSDL from "./schemas/index.js";
 // eslint-disable-next-line require-jsdoc
 export default async function register(app) {
 
+const {setContext} = setContex;  
 const { createHttpLink } = httpLink;
 
 const tokenInfo = getAnonymousAccessToken();
@@ -47,10 +48,10 @@ const remoteSchema = makeRemoteExecutableSchema({ schema: exSchema, link });
     label: "demandcluster channels",
     name: "demandcluster",
     version: pkg.version,
-    i18n,
-    graphQL: {
-      schemas: [remoteSchema]
-    }
+    //i18n,
+  //  graphQL: {
+  //    schemas: [remoteSchema]
+  //  }
     // other props
   });
 }

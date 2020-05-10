@@ -1,8 +1,8 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.2.10",
+  "version": "1.2.14",
   "description": "Reaction Channel manager plugin for DemandCluster",
-  "main": "./index.js",
+  "main": "index.js",
   "type": "module",
   "engines": {
     "node": ">=12.14.1"
@@ -17,7 +17,6 @@
     "url": "https://github.com/rondlite/reaction-channel-manager/issues"
   },
   "homepage": "https://github.com/rondlite/reaction-channel-manager#readme",
-
   "dependencies": {
     "@reactioncommerce/api-utils": "~1.12.0",
     "apollo-link": "^1.2.14",
@@ -26,9 +25,7 @@
     "graphql-tools": "^5.0.0",
     "node-fetch": "^2.6.0"
   },
-
   "sideEffects": false,
- 
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
