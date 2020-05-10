@@ -1,6 +1,6 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "Reaction Channel manager plugin for DemandCluster",
   "type": "module",
   "engines": {
@@ -21,9 +21,7 @@
     "LICENSE",
     "README.md"
   ],
- 
-  "main": "src/index.js",
-
+  "main": "./src/index.js",
   "dependencies": {
     "@reactioncommerce/api-utils": "~1.12.0",
     "apollo-link": "^1.2.14",

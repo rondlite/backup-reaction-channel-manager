@@ -1,6 +1,6 @@
 
 import graphqlTools from "graphql-tools";
-
+import pkg from "../package.json";
 import getAnonymousAccessToken from "@reactioncommerce/api-utils/getAnonymousAccessToken.js";
 
 
@@ -49,7 +49,7 @@ export default async function register(app) {
   await app.registerPlugin({
     label: "demandcluster channels",
     name: "demandcluster",
-    version: "1.1.5",
+    version: pkg.version,
     i18n,
     graphQL: {
       schemas: [remoteSchema]
