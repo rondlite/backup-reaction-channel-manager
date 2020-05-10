@@ -1,7 +1,8 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Reaction Channel manager plugin for DemandCluster",
+  "type": "module",
   "engines": {
     "node": ">=12.14.1"
   },
@@ -38,6 +39,9 @@
   "scripts": {
     "build": "babel src -d dist",
     "prepublishOnly": "npm run build"
+  },
+  "env": {
+    "es6": true
   },
   "dependencies": {
     "@reactioncommerce/api-utils": "~1.12.0",
