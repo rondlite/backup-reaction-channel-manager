@@ -1,7 +1,11 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reaction Channel manager plugin for DemandCluster",
+  "type": "module",
+  "engines": {
+    "node": ">=12.14.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rondlite/reaction-channel-manager.git"

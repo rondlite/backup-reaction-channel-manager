@@ -49,7 +49,7 @@ export default async function register(app) {
   await app.registerPlugin({
     label: "demandcluster channels",
     name: "reaction-demandcluster",
-    version: "0.1.0",
+    version: "1.0.2",
     i18n,
     graphQL: {
       schemas: [remoteSchema]
