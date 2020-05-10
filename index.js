@@ -1,3 +1,3 @@
-import demandcluster from "./src/index.js";
+import register from "./src/index.js";
 
-export default demandcluster;
+export default register;
