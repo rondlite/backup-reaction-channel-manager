@@ -31,11 +31,6 @@
     "node-fetch": "^2.6.0"
   },
 
-  "exports": {
-    "./": "./src",
-    "./i18n": "./src/i18n",
-    "./schemas": "./src/schemas"
-  },
   "sideEffects": false,
  
   "devDependencies": {
