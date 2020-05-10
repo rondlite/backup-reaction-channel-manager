@@ -1,2 +1,2 @@
-React Channel manager for DemandCluster
+Reaction Channel manager for DemandCluster
 

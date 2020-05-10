@@ -1,12 +1,12 @@
 {
-  "name": "@demandcluster/channel-manager",
-  "version": "1.0.0",
+  "name": "@demandcluster/reaction-channel-manager",
+  "version": "1.0.1",
   "description": "Reaction Channel manager plugin for DemandCluster",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rondlite/reaction-channel-manager.git"
   },
-  "author": "demandcluster",
+  "author": "DemandCluster",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rondlite/reaction-channel-manager/issues"
@@ -42,7 +42,12 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
-    "@reactioncommerce/api-utils": "~1.12.0"
+    "@reactioncommerce/api-utils": "~1.12.0",
+    "apollo-link": "^1.2.14",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-http": "^1.5.17",
+    "graphql-tools": "^5.0.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -51,5 +56,8 @@
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-eslint": "^10.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
