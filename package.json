@@ -1,6 +1,6 @@
 {
   "name": "@demandcluster/reaction-channel-manager",
-  "version": "1.2.37",
+  "version": "1.2.40",
   "description": "Reaction Channel manager plugin for DemandCluster",
   "main": "index.js",
   "type": "module",
